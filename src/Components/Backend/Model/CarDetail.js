@@ -10,7 +10,7 @@ const CarDetail = new mongoose.Schema({
         required: true
     },
     route: {
-        type: String,
+        type: [String],
         required: true
     },
     carImage: {
