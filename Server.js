@@ -9,8 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 mongoose.connect(
-    'mongodb://carwrap:carwrap@ac-bludfzz-shard-00-00.ncbvigm.mongodb.net:27017,ac-bludfzz-shard-00-01.ncbvigm.mongodb.net:27017,ac-bludfzz-shard-00-02.ncbvigm.mongodb.net:27017/carwrap?ssl=true&replicaSet=atlas-13139h-shard-0&authSource=admin&retryWrites=true&w=majority',
-    { useNewUrlParser: true, useUnifiedTopology: true}
+    'mongodb://carwrap:carwrap@ac-bludfzz-shard-00-00.ncbvigm.mongodb.net:27017,ac-bludfzz-shard-00-01.ncbvigm.mongodb.net:27017,ac-bludfzz-shard-00-02.ncbvigm.mongodb.net:27017/carwrap?ssl=true&replicaSet=atlas-13139h-shard-0&authSource=admin&retryWrites=true&w=majority'
 ).then(() => {
     console.log('Connected to MongoDb Atlas!');
 }).catch((err) => {
